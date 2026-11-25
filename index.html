@@ -9,6 +9,7 @@
     <main>
       <h1>L-System Music Engine</h1>
       <p>Egyszerű determinisztikus levezetés</p>
+      <p>Szabályrendszer:</p>
       <pre>
 const grammar = {
   axiom: "A",
@@ -19,7 +20,10 @@ const grammar = {
   iterations: 3
 };
       </pre>
+      <p>Levezetés szintről szintre:</p>
       <output id="derivation" aria-live="polite"></output>
+      <p>Végeremény (zenei mappelésnél használt string):</p>
+      <output id="string" aria-live="polite"></output>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
