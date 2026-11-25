@@ -8,7 +8,17 @@
   <body>
     <main>
       <h1>L-System Music Engine</h1>
-      <p>Phase 1: basic deterministic derivation</p>
+      <p>Egyszerű determinisztikus levezetés</p>
+      <pre>
+const grammar = {
+  axiom: "A",
+  rules: {
+    A: "AB",
+    B: "A"
+  },
+  iterations: 3
+};
+      </pre>
       <output id="derivation" aria-live="polite"></output>
     </main>
     <script type="module" src="/src/main.js"></script>

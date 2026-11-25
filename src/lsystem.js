@@ -16,6 +16,7 @@
 export function derive(grammar) {
   const { axiom, rules, iterations } = grammar;
 
+  // hibaellenőrzés
   if (!Number.isInteger(iterations) || iterations < 0) {
     throw new TypeError("iterations must be a non-negative integer");
   }
@@ -36,7 +37,7 @@ export function derive(grammar) {
 }
 
 /**
- * Visszaadja az összes levezetési szintet, a kezdő axiómát is beleértve.
+ * Visszaadja az összes levezetési szintet egy tömbben, a kezdő axiómát is beleértve.
  *
  * @param {Grammar} grammar
  * @returns {string[]}
